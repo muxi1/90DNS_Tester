@@ -51,7 +51,7 @@ int main(int argc, char **argv)
 
 void checkHostnames() 
 {
-    printf("90DNS Testing Utility v1.0.4\n\n");
+    printf("90DNS Tester v1.0.4\n\n");
     printf("Testing:\n");
 
     // Iterate through hostnames array
