@@ -34,9 +34,9 @@ int main(int argc, char **argv)
         u64 kDown = padGetButtonsDown(&pad);
 
         // Exit on B
-        if (kDown & KEY_B) break;
+        if (kDown & HidNpadButton_B) break;
         // Retry on X
-        if (kDown & KEY_X)
+        if (kDown & HidNpadButton_X)
         {
             consoleClear();
             checkHostnames();
@@ -51,7 +51,7 @@ int main(int argc, char **argv)
 
 void checkHostnames() 
 {
-    printf("90DNS Tester v1.0.5\n\n");
+    printf("90DNS Tester v1.0.6\n\n");
     printf("Testing:\n");
 
     // Iterate through hostnames array
