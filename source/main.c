@@ -55,12 +55,12 @@ int main(int argc, char **argv)
 
 void checkHostnames() 
 {
-    printf("90DNS Tester v1.0.8\n\n");
+    printf("90DNS Tester v1.0.11 - amsPLUS/amsPLUS-M\n\n");
 
     // Check if system says we're connected to a network (wifi or ethernet)
     Result net_rc = nifmGetInternetConnectionStatus(NULL, NULL, NULL);
     if (R_FAILED(net_rc)) {
-        printf(CONSOLE_RED "ACHTUNG, es besteht keine Verbindung zu einem Netzwerk! Flugzeug Modus?\n" CONSOLE_RESET);
+        printf(CONSOLE_RED "ACHTUNG! Nicht mit dem Netzwerk verbunden!\n" CONSOLE_RESET);
     }
 
     printf("Teste:\n");
@@ -99,7 +99,7 @@ void checkHostnames()
         consoleUpdate(console);
     }
 
-    printf("\nDruecke B zum Beenden. Druecke X fuer erneuten Test.");
+    printf("\nDruecke B zum Beenden. Druecke X um erneut zu Testen.");
     consoleUpdate(console);
 }
 

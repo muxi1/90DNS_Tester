@@ -43,10 +43,10 @@ SOURCES		:=	source
 DATA		:=	data
 INCLUDES	:=	include
 
-APP_VERSION := 1.0.8
+APP_VERSION := 1.0.11
 APP_TITLE   := 90DNS Tester
-APP_AUTHOR  := Nexrem / muxi
-ICON        := appicon.jpg
+APP_AUTHOR  := amsPLUS/amsPLUS-M
+ICON        := icon.jpg
 
 #---------------------------------------------------------------------------------
 # options for code generation
